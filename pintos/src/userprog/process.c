@@ -48,7 +48,8 @@ process_execute (const char *file_name)
 	//printf("[execute][name] %s, %x\n", thread_name(), t);
 
 	fn_copy = palloc_get_page (0);
-	if (fn_copy == NULL){
+	if (fn_copy == NULL)
+	{
 			return TID_ERROR;
 	}
 	
